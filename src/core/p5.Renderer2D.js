@@ -2,7 +2,6 @@
 var p5 = require('./core');
 var canvas = require('./canvas');
 var constants = require('./constants');
-var filters = require('../image/filters');
 
 require('./p5.Renderer');
 
@@ -117,9 +116,11 @@ p5.Renderer2D.prototype._getTintedImageCanvas = function (img) {
   tmpCtx.fillStyle = 'hsl(' + this._pInst.hue(this._tint) + ', 100%, 50%)';
   tmpCtx.fillRect(0, 0, this._tintCanvas.width, this._tintCanvas.height);
   tmpCtx.globalCompositeOperation = 'destination-atop';
-  tmpCtx.drawImage(img.canvas, 0, 0, this._tintCanvas.width, this._tintCanvas.height);
+  tmpCtx.drawImage(img.canvas, 0, 0, this._tintCanvas.width,
+    this._tintCanvas.height);
   tmpCtx.globalCompositeOperation = 'multiply';
-  tmpCtx.drawImage(img.canvas, 0, 0, this._tintCanvas.width, this._tintCanvas.height);
+  tmpCtx.drawImage(img.canvas, 0, 0, this._tintCanvas.width,
+    this._tintCanvas.height);
   return this._tintCanvas;
 };
 
