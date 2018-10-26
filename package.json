@@ -1,5 +1,5 @@
 {
-  "name": "p5",
+  "name": "@code-dot-org/p5",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/processing/p5.js.git"
@@ -10,7 +10,7 @@
     "docs": "grunt yui",
     "test": "grunt"
   },
-  "version": "0.5.4",
+  "version": "0.5.4-cdo",
   "devDependencies": {
     "amdclean": "~0.3.3",
     "browserify": "^11.0.1",
