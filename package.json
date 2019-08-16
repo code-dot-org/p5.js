@@ -10,9 +10,10 @@
     "docs": "grunt yui",
     "test": "grunt"
   },
-  "version": "0.5.4-cdo",
+  "version": "0.5.4-cdo.3",
   "devDependencies": {
     "amdclean": "~0.3.3",
+    "brfs": "^1.4.0",
     "browserify": "^11.0.1",
     "chai": "^3.5.0",
     "concat-files": "^0.1.0",
@@ -42,7 +43,6 @@
   },
   "license": "LGPL-2.1",
   "dependencies": {
-    "brfs": "^1.4.0",
     "opentype.js": "^0.4.9",
     "reqwest": "^1.1.5"
   },
