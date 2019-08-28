@@ -10,7 +10,7 @@
     "docs": "grunt yui",
     "test": "grunt"
   },
-  "version": "0.5.4-cdo.3",
+  "version": "0.5.4-cdo.4",
   "devDependencies": {
     "amdclean": "~0.3.3",
     "brfs": "^1.4.0",
